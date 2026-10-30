@@ -1,48 +1,473 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Scholes' shopping list</title>
-<style>
-    table, th, td{
-        border:1px solid blueviolet
-    }
-</style>
+    <meta name="description" content="The love story of Scholes and Rosalia — two names, beautiful memories, and one unforgettable story.">
+    <title>Scholes ❤️ Rosalia | Our Love Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <a href="https://web.facebook.com/">Facebook</a>
-    <br>
-    <br>
-    <br>
-    <br>
-    <table>
-        <tr>
-            <th>Expenses</th>
-            <th>Amount</th>
-            <th>Category</th>
 
-        </tr>
-        <tr>
-            <td>Groceries</td>
-            <td>Ksh250.00</td>
-            <td>Food</td>
-        </tr>
-        <tr>
-            <td>Transport</td>
-            <td>Ksh100.00</td>
-            <td>travel</td>
+    <!-- Floating background hearts -->
+    <div class="hearts-background" id="hearts-background"></div>
 
-        </tr>
-<tr>
-    <td>Netflix</td>
-    <td>Ksh700.00</td>
+    <!-- Welcome screen -->
+    <section class="welcome-screen" id="welcome-screen">
+        <div class="welcome-card">
+            <div class="welcome-heart">❤️</div>
+            <p class="welcome-small">A little story made with love</p>
+            <h1>For My Beautiful Rosalia</h1>
+            <p class="welcome-message">
+                Some stories are written in books.
+                Ours was written in our hearts.
+            </p>
+            <p>Are you ready to open our love story?</p>
+            <button id="open-story" class="primary-btn">
+                Open My Love Story ❤️
+            </button>
+            <span class="welcome-footer">Made with love by Scholes 💗</span>
+        </div>
+    </section>
 
-    <td>Entertainment</td>
-</tr>
+    <!-- Main website -->
+    <div id="main-website" class="hidden">
 
-    </table>
-    <img src="ya.jpg">
+        <!-- Navigation -->
+        <header class="navbar">
+            <a href="#home" class="logo">S <span>❤️</span> R</a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#story">Our Story</a>
+                <a href="#gallery">Memories</a>
+                <a href="#letter">Love Letter</a>
+                <a href="#surprise">Surprise</a>
+                <a href="#questionnaire">Questions</a>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">A story written by two hearts</span>
+                <h1>Scholes <span>❤️</span> Rosalia</h1>
+                <p class="hero-subtitle">
+                    Our Story, Our Memories, Our Forever
+                </p>
+                <p class="hero-description">
+                    From a little moment beside the school library
+                    to a story that crossed borders.
+                </p>
+                <a href="#story" class="primary-btn">Read Our Story 💗</a>
+                <div class="hero-hearts">💕 💗 💖 💞</div>
+            </div>
+        </section>
+
+        <!-- Relationship counter -->
+        <section class="counter-section">
+            <div class="section-heading">
+                <span class="eyebrow">Every memory matters</span>
+                <h2>Our Journey Together 💕</h2>
+                <p>Since the day our relationship began.</p>
+            </div>
+
+            <div class="counter-card">
+                <p class="counter-label">Our relationship journey</p>
+                <div class="counter-grid">
+                    <div class="counter-item">
+                        <strong id="days">0</strong>
+                        <span>Days</span>
+                    </div>
+                    <div class="counter-item">
+                        <strong id="hours">0</strong>
+                        <span>Hours</span>
+                    </div>
+                    <div class="counter-item">
+                        <strong id="minutes">0</strong>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="counter-item">
+                        <strong id="seconds">0</strong>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <p class="since-date">Since 21 February 2018 ❤️</p>
+            </div>
+        </section>
+
+        <!-- Our story -->
+        <section class="story-section section-padding" id="story">
+            <div class="section-heading">
+                <span class="eyebrow">Our memories, our journey</span>
+                <h2>Our Story, Our Memories, Our Forever</h2>
+                <p class="story-subtitle">
+                    Four Chapters, Two Hearts, One Unforgettable Story.
+                </p>
+            </div>
+
+            <div class="story-intro">
+                <p>
+                    Every love story has a beginning. Ours began with two names
+                    at Hope Primary School in Kakuma. What seemed like a small
+                    moment became a memory I will always carry in my heart.
+                </p>
+            </div>
+
+            <div class="timeline">
+
+                <!-- Chapter 1 -->
+                <article class="chapter-card">
+                    <div class="chapter-number">01</div>
+                    <span class="chapter-icon">📚</span>
+                    <p class="chapter-label">The beginning</p>
+                    <h3>The Day Our Names Met</h3>
+                    <p class="chapter-location">Hope Primary School · Kakuma</p>
+
+                    <p>
+                        It all started at Hope Primary School in Kakuma, Kenya.
+                    </p>
+                    <p>
+                        One day, I was passing by the library with my friend
+                        Lukaka. I decided to write my name, <strong>THIJIN VS</strong>,
+                        and then I walked away.
+                    </p>
+                    <p>
+                        What I didn't know was that someone special was watching
+                        me from a distance. It was you, Rosalia. You were curious
+                        about what I was doing. After I left, you came closer and
+                        wrote your name, <strong>ROSALIA</strong>, just underneath mine.
+                    </p>
+                    <p>
+                        Maybe it looked like a small thing at the time, but today
+                        it means so much to me. Two names written in one place
+                        became the beginning of a beautiful memory.
+                    </p>
+
+                    <div class="names-card">
+                        <div>
+                            <span>THIJIN VS</span>
+                            <small>The first name ❤️</small>
+                        </div>
+                        <div class="name-heart">💕</div>
+                        <div>
+                            <span>ROSALIA</span>
+                            <small>The name that followed 💗</small>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Chapter 2 -->
+                <article class="chapter-card">
+                    <div class="chapter-number">02</div>
+                    <span class="chapter-icon">💑</span>
+                    <p class="chapter-label">Our relationship</p>
+                    <h3>The Beginning of Us</h3>
+                    <p class="chapter-date">21 February 2018</p>
+
+                    <p>
+                        On 21 February 2018, our relationship began. From that
+                        moment, you became someone very special to me.
+                    </p>
+                    <p>
+                        We created memories, shared moments, and built a story
+                        that I still carry in my heart. I cannot explain every
+                        feeling in words, but I know that meeting you changed
+                        a part of my life.
+                    </p>
+                    <div class="chapter-quote">
+                        "Some moments become memories that time can never erase."
+                    </div>
+                </article>
+
+                <!-- Chapter 3 -->
+                <article class="chapter-card">
+                    <div class="chapter-number">03</div>
+                    <span class="chapter-icon">✈️</span>
+                    <p class="chapter-label">Across the distance</p>
+                    <h3>When Distance Became Part of Our Story</h3>
+                    <p class="chapter-date">2020 · Kakuma to Egypt</p>
+
+                    <p>
+                        In 2020, life took us in different directions. You left
+                        for Egypt, while I remained in Kakuma, Kenya.
+                    </p>
+                    <p>
+                        Suddenly, the places that once connected us were far
+                        apart. We could no longer share everyday moments in
+                        the same way. Distance became part of our story, and
+                        time moved on.
+                    </p>
+                    <p>
+                        Sometimes I wonder what is in your heart today. I don't
+                        know whether you still see me as your boyfriend or
+                        whether you still feel the same way I do.
+                    </p>
+                    <p>
+                        But I want you to know something: <strong>my feelings
+                        for you are still real.</strong>
+                    </p>
+                    <div class="distance-card">
+                        <div>
+                            <span>🇰🇪</span>
+                            <strong>Kakuma</strong>
+                            <small>Scholes</small>
+                        </div>
+                        <div class="distance-line">❤️ ───── ❤️</div>
+                        <div>
+                            <span>🇪🇬</span>
+                            <strong>Egypt</strong>
+                            <small>Rosalia</small>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Chapter 4 -->
+                <article class="chapter-card final-chapter">
+                    <div class="chapter-number">04</div>
+                    <span class="chapter-icon">💍</span>
+                    <p class="chapter-label">A message from my heart</p>
+                    <h3>My Forever Message to You</h3>
+
+                    <p>
+                        Rosalia, even though we are miles apart, I still
+                        treasure the memories we created.
+                    </p>
+                    <p>
+                        I cannot promise that life will always be easy, and I
+                        cannot decide what the future holds for both of us.
+                        But I can honestly tell you how I feel.
+                    </p>
+                    <p class="forever-message">
+                        For me, you are still my forever. ❤️
+                    </p>
+                    <p>
+                        I don't know what tomorrow will bring, but I will always
+                        be grateful that our paths crossed at Hope Primary School.
+                    </p>
+                    <p>
+                        If I could go back to that day beside the library, I
+                        would still write my name, hoping that one day you
+                        would write yours beneath it again.
+                    </p>
+
+                    <div class="signature">
+                        With all my love,<br>
+                        <span>Your Scholes 💗</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section section-padding" id="gallery">
+            <div class="section-heading">
+                <span class="eyebrow">Captured moments</span>
+                <h2>Our Beautiful Memories 📸</h2>
+                <p>Every picture tells a little part of our story.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gallery-card">
+                    <img src="thijin.jpg" alt="Scholes" loading="lazy">
+                    <figcaption>My favourite memories 💗</figcaption>
+                </figure>
+
+                <figure class="gallery-card">
+                    <img src="rosalia.jpg" alt="Rosalia" loading="lazy">
+                    <figcaption>My beautiful Rosalia 🌸</figcaption>
+                </figure>
+
+                <figure class="gallery-card">
+                    <img src="scholes.jpg" alt="Scholes and memories" loading="lazy">
+                    <figcaption>A piece of our journey ❤️</figcaption>
+                </figure>
+
+                <figure class="gallery-card">
+                    <img src="sav.jpg" alt="A special memory" loading="lazy">
+                    <figcaption>Memories worth keeping 💕</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Love letter -->
+        <section class="letter-section section-padding" id="letter">
+            <div class="section-heading">
+                <span class="eyebrow">Words from my heart</span>
+                <h2>A Letter to My Rosalia 💌</h2>
+            </div>
+
+            <div class="letter-card">
+                <p class="letter-greeting">My dear Rosalia,</p>
+
+                <p>
+                    I created this little website because there are memories
+                    I never want to lose. I wanted to give our story a place
+                    where I can keep the moments that mean so much to me.
+                </p>
+
+                <p>
+                    From the library at Hope Primary School to the distance
+                    between Kakuma and Egypt, our story has had different
+                    chapters. Even though we are apart, I still remember
+                    where everything began.
+                </p>
+
+                <p>
+                    I don't know what you feel today, and I don't want to
+                    assume. I simply want you to know that you remain a
+                    special person in my heart.
+                </p>
+
+                <p>
+                    Thank you for being part of my story. Whatever tomorrow
+                    brings, I will always treasure the memory of us.
+                </p>
+
+                <p class="letter-closing">
+                    Forever in my memories,<br>
+                    <strong>Scholes ❤️</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- Surprise -->
+        <section class="surprise-section section-padding" id="surprise">
+            <div class="section-heading">
+                <span class="eyebrow">A little surprise</span>
+                <h2>Something Special for You 🎁</h2>
+                <p>Rosalia, there is a message waiting for you.</p>
+            </div>
+
+            <div class="surprise-card">
+                <div class="gift-icon">🎁</div>
+                <h3>Open Your Little Surprise</h3>
+                <p>Tap the button below and see what my heart wants to say.</p>
+                <button id="surprise-btn" class="primary-btn">
+                    Open My Surprise 💗
+                </button>
+                <div id="surprise-message" class="surprise-message hidden">
+                    <h3>Rosalia ❤️</h3>
+                    <p>
+                        No matter how far apart we are, I will always be
+                        grateful for the day our names met.
+                    </p>
+                    <p class="handwritten">
+                        You are my forever. 💕
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future dreams -->
+        <section class="dreams-section section-padding">
+            <div class="section-heading">
+                <span class="eyebrow">A hopeful heart</span>
+                <h2>Dreams for Tomorrow 🌷</h2>
+                <p>Some things are beautiful to hope for.</p>
+            </div>
+
+            <div class="dream-grid">
+                <div class="dream-card">
+                    <span>🌍</span>
+                    <h3>Closing the Distance</h3>
+                    <p>Hoping that one day distance will no longer separate us.</p>
+                </div>
+
+                <div class="dream-card">
+                    <span>📸</span>
+                    <h3>New Memories</h3>
+                    <p>Creating beautiful memories wherever life takes us.</p>
+                </div>
+
+                <div class="dream-card">
+                    <span>💗</span>
+                    <h3>Honest Conversations</h3>
+                    <p>Always making space for truth, understanding and respect.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questionnaire -->
+        <section class="questionnaire-section section-padding" id="questionnaire">
+            <div class="section-heading">
+                <span class="eyebrow">Your thoughts matter</span>
+                <h2>A Few Questions for You, Rosalia 💌</h2>
+                <p>
+                    If you feel comfortable, I would love to hear your thoughts.
+                </p>
+            </div>
+
+            <form id="love-form" class="love-form">
+                <label for="her-name">Your name</label>
+                <input type="text" id="her-name" name="Name"
+                    placeholder="Your name" required>
+
+                <label for="memory">1. Do you remember the day at the school library?</label>
+                <textarea id="memory" name="Library memory"
+                    placeholder="Tell me what you remember..." required></textarea>
+
+                <label for="special-memory">2. What is your favourite memory of us?</label>
+                <textarea id="special-memory" name="Favourite memory"
+                    placeholder="Share your favourite memory..."></textarea>
+
+                <label for="feelings">3. How do you feel when you remember our story?</label>
+                <textarea id="feelings" name="Your feelings"
+                    placeholder="Share your thoughts honestly..."></textarea>
+
+                <label for="future">4. What would you like our future to look like?</label>
+                <textarea id="future" name="Future thoughts"
+                    placeholder="Your hopes and thoughts..."></textarea>
+
+                <label class="consent-label">
+                    <input type="checkbox" id="consent" name="Consent"
+                        value="Yes" required>
+                    I am comfortable sharing these answers with Scholes.
+                </label>
+
+                <button type="submit" class="primary-btn" id="submit-btn">
+                    Send My Answers 💗
+                </button>
+
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-heart">❤️</div>
+            <h2>Scholes & Rosalia</h2>
+            <p>Our Story, Our Memories, Our Forever.</p>
+            <p class="footer-small">
+                Made with love by Scholes · 2026
+            </p>
+            <a href="#home" class="back-top">Back to the beginning ↑</a>
+        </footer>
+
+    </div>
+
+    <!-- Video player -->
+    <div class="video-player" id="video-player">
+        <div class="video-heading">
+            <span>Our special video 💗</span>
+            <button id="close-video" aria-label="Close video">×</button>
+        </div>
+        <video id="background-video" controls loop playsinline preload="metadata">
+            <source src="baby.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
